@@ -1,0 +1,144 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	title Ejemplo de meta title
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="Frontend BRM" )
+
+
+block content
+	section.container-fluid.cont-slider-fnc
+		div.row
+			ul
+				li
+					a(href="")
+						img(src="", alt="")
+				li
+					a(href="")
+						img(src="", alt="")
+				li
+					a(href="")
+						img(src="", alt="")
+
+	section.container-fluid.cont-acercade-fnc
+		div.row
+			div.col-lg-3.col-md-6.col-sm-12.col-xs-12.col-lg-offset-3.padding.sombra
+				img.img-responsive(src="images/Img-Ejem-Home1.jpg", alt="")
+
+			div.col-lg-3.col-md-6.col-sm-12.col-xs-12.padding
+				i.icono-hojas
+
+				h3.titulos-acerca
+					| La fundación
+
+				p.texto-acerca
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis deleniti praesentium exercitationem at commodi nisi. Quibusdam est illum, officia cumque impedit sunt accusamus consectetur, facilis veritatis facere. Quos, et veniam!
+		div.row
+			div.col-lg-3.col-md-6.col-sm-12.col-xs-12.col-lg-offset-3.padding
+				i.icono-hojas
+					
+				h3.titulos-acerca
+					| Noticias
+
+				p.texto-acerca
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis deleniti praesentium exercitationem at commodi nisi. Quibusdam est illum, officia cumque impedit sunt accusamus consectetur, facilis veritatis facere. Quos, et veniam!
+
+			div.col-lg-3.col-md-6.col-sm-12.col-xs-12.padding.sombra
+				img.img-responsive(src="images/Img-Ejem-Home1.jpg", alt="")
+				
+	section.container-fluid.cont-inform-fnc
+		div.row
+			h2
+				| Lorem ipsum.
+
+			p.subtitulo-section
+				| Dolor sit amet consectetur adipiscing elit.
+
+			
+			div.cont-destacados.col-lg-2.col-md-4.col-sm-10.col-xs-10.col-lg-offset-3.col-md-offset-0.col-sm-offset-1.col-xs-offset-1
+				div.cont-iconos-destacados
+					img(src="images/Iconos-Logo/Img-Icono-Estetos.png", alt="")
+
+				p.texto-porcent-dest
+					| 96%
+
+				p.subtitulo-destacados
+					| Lorem impsum
+
+				em.texto-destacados
+					| Lorem ipsum dolor sit amet, consectetur adipisicing.
+
+			div.cont-destacados.col-lg-2.col-md-4.col-sm-10.col-xs-10.col-lg-offset-0.col-md-offset-0.col-sm-offset-1.col-xs-offset-1
+				div.cont-iconos-destacados
+					img(src="images/Iconos-Logo/Img-Icono-Inhalador.png", alt="")
+
+				p.texto-porcent-dest
+					| 96%
+
+				p.subtitulo-destacados
+					| Lorem impsum
+
+				em.texto-destacados
+					| Lorem ipsum dolor sit amet, consectetur adipisicing.
+
+			div.cont-destacados.col-lg-2.col-md-4.col-sm-10.col-xs-10col-lg-offset-0.col-md-offset-0.col-sm-offset-1.col-xs-offset-1
+				div.cont-iconos-destacados
+					img(src="images/Iconos-Logo/Img-Icono-Sesta.png", alt="")
+
+				p.texto-porcent-dest
+					| 96%
+
+				p.subtitulo-destacados
+					| Lorem impsum
+
+				em.texto-destacados
+					| Lorem ipsum dolor sit amet, consectetur adipisicing.
+
+	section.container-fluid.cont-ubicacion-fnc
+		div.row
+			div.inicio-margin-top.col-lg-3.col-md-6.col-sm-12.col-xs-12.col-lg-offset-3.sombra.cont-inform-vi
+				i.cont-icono
+					img.img-responsive(src="images/Iconos-Logo/Img-Icono-Pulmone.png", alt="")
+
+				div.descrp-inform
+					h4
+						| Un soplo de vida
+					p.texto-corr-azul
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum autem, necessitatibus expedita earum ab aperiam excepturi neque, accusamus fuga ipsum.
+			
+			div.inicio-margin-top.col-lg-3.col-md-6.col-sm-12.col-xs-12.padding.sombraB.cont-video
+				button.conte-play-video
+					p.glyphicon-play.glyphicon
+
+					
+				
+		div.row
+			div.col-lg-3.col-md-6.col-sm-12.col-xs-12.col-lg-offset-3.padding.sombra
+				img.img-responsive(src="images/Img-Ejem-Home2.jpg", alt="")
+			
+			div.col-lg-3.col-md-6.col-sm-12.col-xs-12.padding.sombraB
+				
+				div.cont-mapa
+					div.embed-responsive.embed-responsive-16by9.mapa-responsive.
+						<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.1704722248032!2d-74.03663268460446!3d4.740422342630215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f857e9c2fa42d%3A0x886d90591761bf99!2sFundaci%C3%B3n+Neumol%C3%B3gica+Colombiana!5e0!3m2!1ses!2sco!4v1477432745132" width="100%" height="442" frameborder="0" style="border:0" allowfullscreen></iframe>
+					
+					p.texto-mapa
+						| Como llegar
+
+				div.cont-datos-ubicacion
+					i.cont-iconoB
+						img.img-responsive(src="images/Iconos-Logo/Img-Icono-Contacto.png", alt="")
+
+					div.text-datosU
+						| Dirección: Cra. 13 B # 161 - 85<br> Teléfono: 742 8900 <br>Citas: 742 8888 <br>Fax: (571) 742 8903 <br>Bogotá - Colombia
+
+	
+	
+
+block Scripts
+	//-Acá se ponen js que solo vayan en ésta página
+

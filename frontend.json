@@ -1,0 +1,26 @@
+{
+  "name": "fundacion-n",
+  "title": "fundacion-n",
+  "description": "Descripción del proyecto.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/brm-castillol/HTML",
+  "author": {
+    "name": "Lady Castillo",
+    "email": "esteffany.castillo@brm.com.co"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brm-castillol/HTML.git"
+  },
+  "bugs": "https://github.com/brm-castillol/HTML/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/brm-castillol/HTML/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}

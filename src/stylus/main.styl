@@ -1,0 +1,17 @@
+//Nib & gradient support
+@import 'nib/vendor'
+@import 'nib/gradients'
+//Esto hace que exporte los estilos css3 con soporte para todos los navegadores
+vendor-prefixes = o ms webkit moz official
+
+//Variables y funciones, se deben declarar primero que el resto de archivos para poderlos utilizar
+@import "modules/variables"
+@import "modules/funciones"
+
+//Layout
+@import "modules/base"
+@import "modules/font"
+@import "modules/menu"
+@import "modules/footer"
+@import "modules/media-queries"
+@import "modules/interna"

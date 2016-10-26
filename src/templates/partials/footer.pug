@@ -1,0 +1,67 @@
+//Footer
+
+footer.container-fluid
+	div.row
+		div.col-lg-2.col-md-4.col-sm-10.col-xs-12.col-lg-offset-3.col-md-offset-0.col-sm-offset-0.col-xs-offset-0
+			ul.contenedor-link-footer
+				li
+					a(href="") Inicio
+				li
+					a(href="") Servicios
+				li
+					a(href="") Información para pacientes familiares
+				li
+					a(href="") Educación y docencia
+				li
+					a(href="") Investigación
+
+		div.col-lg-2.col-md-4.col-sm-10.col-xs-12
+			ul.contenedor-link-footer
+				li
+					a(href="") Ayúdenos a mejorar
+				li
+					a(href="") Comentarios de nuestros pacientes
+				li
+					a(href="") Políticas y presentación
+				li
+					a(href="") Términos y condiciones
+				li
+					a(href="") Usuarios internos
+
+		div.col-lg-2.col-md-4.col-sm-10.col-xs-12
+			p.text-siguenos
+				| Siguenos
+			ul.cont-redes-footer
+				li
+					a(href="")
+						img(src="images/Iconos-Redes/Img-Icono-Fb.png", alt="")
+				li
+					a(href="")
+						img(src="images/Iconos-Redes/Img-Icono-Twitt.png", alt="")
+				li
+					a(href="")
+						img(src="images/Iconos-Redes/Img-Icono-YouT.png", alt="")
+				li
+					a(href="")
+						img(src="images/Iconos-Redes/Img-Icono-Link.png", alt="")
+			div.clear
+			p.text-derechosR
+				|Todos los derechos reservados © 2016
+
+			p.text-derechosR
+				|FUNDACIÓN NEUMOLÓGICA COLOMBIANA
+
+
+///-Footer
+
+//Scripts
+//-Estos son los scripts que van en todos los htmls del desarrollo
+if debug == true
+	script(src='js/libs/jquery.js')
+	script(src='js/libs/bootstrap.min.js')
+	script(src='js/frontend-brm.js')
+	script(src='js/fundacion-script.js')
+
+else
+	script(src="js/libs.frontend-brm.min.js")
+	script(src='js/frontend-brm.js')
