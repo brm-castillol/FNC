@@ -4,7 +4,7 @@
  * @link https://github.com/brm-castillol/HTML
  * @link Lady Castillo - esteffany.castillo@brm.com.co
  * @license 
- *Wed Oct 26 2016 16:42:36 GMT-0500 (COT)
+ *Wed Oct 26 2016 17:13:30 GMT-0500 (COT)
  */
 a {
   text-decoration: none;
@@ -384,7 +384,19 @@ footer {
   font-style: normal;
   text-align: right;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 800px) {
+  li.menu-borde {
+    borber: none !important;
+  }
+  #navegacion li {
+    width: 100%;
+    background-color: #aeeae3;
+  }
+  #navegacion li:hover,
+  #navegacion li:active,
+  #navegacion li:focus {
+    background-color: #fff;
+  }
   ul.menu-fundacion li:not(:first-child) {
     display: none;
   }
@@ -392,8 +404,13 @@ footer {
     float: right;
     display: inline-block !important;
   }
+  .icon:hover,
+  .icon:active,
+  .icon:focus {
+    text-decoration: none !important;
+  }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 800px) {
   ul.menu-fundacion.responsive {
     position: relative;
   }
@@ -409,6 +426,42 @@ footer {
     position: absolute;
     left: 92%;
     top: -283%;
+  }
+  .cont-iconos-menu {
+    display: none;
+  }
+}
+@media (max-width: 1280px) {
+  p.text-menu,
+  p.text-menu-donaciones {
+    text-align: center;
+    padding: 0 5%;
+    font-size: 1.2rem;
+  }
+  .cont-iconos-menu {
+    width: 33%;
+    margin-left: 31%;
+  }
+}
+@media (max-width: 600px) {
+  .icon {
+    top: -264%;
+  }
+}
+@media (max-width: 480px) {
+  .icon {
+    top: -202%;
+  }
+}
+@media (max-width: 414px) {
+  .icon {
+    top: -166%;
+  }
+}
+@media (max-width: 320px) {
+  .icon {
+    top: -115%;
+    left: 86%;
   }
 }
 .banner-interna {

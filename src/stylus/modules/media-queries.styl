@@ -1,4 +1,14 @@
-@media screen and (max-width:680px)
+@media screen and (max-width:800px)
+  li.menu-borde
+        borber none !important
+
+  #navegacion
+    li
+      width 100%
+      background-color $VerdeCla
+      
+      &:hover, &:active, &:focus
+        background-color $Blanco   
   ul
     
     &.menu-fundacion
@@ -10,8 +20,12 @@
   .icon
      float right
      display inline-block !important
+     
+     &:hover, &:active, &:focus
+       text-decoration none !important
+     
 
-@media screen and (max-width:680px)
+@media screen and (max-width:800px)
   ul
     &.menu-fundacion
       &.responsive
@@ -19,6 +33,7 @@
         li
           float none
           display inline
+          
           a
             display block
             text-align left
@@ -27,3 +42,37 @@
             position absolute
             left 92%
             top -283%
+  
+  .cont-iconos-menu
+    display none
+
+@media (max-width:1280px)
+
+  p.text-menu, p.text-menu-donaciones
+    text-align center
+    padding 0 5%
+    font-size 1.2rem
+    
+  .cont-iconos-menu
+    width 33%
+    margin-left 31%
+
+@media (max-width:600px)
+  .icon
+    top -264%
+  
+
+
+@media (max-width:480px)
+  .icon
+    top -202%
+  
+
+@media (max-width:414px)
+  .icon
+    top -166%
+
+@media (max-width:320px)
+  .icon
+    top -115%
+    left 86%
