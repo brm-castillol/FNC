@@ -1,0 +1,34 @@
+extends ../templates/base
+
+block title
+	-var titulo = "Interna";
+	title Interna
+
+block content
+	section.container-fluid.cont-banner-interna
+		div.row
+			div.banner-interna
+				p.titulo-banner-interna
+					| Contáctanos
+
+	section.container-fluid.margen-top
+		div.row
+			div.col-lg-8.col-md-7.col-sm-12.col-xs-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-0.col-xs-offset-0.contenedor-general-notas.sombra
+				form
+					div.col-lg-6.col-md-6.col-sm-12.col-xs-12.padding.padding-r
+						input(placeholder="Nombre" type="text")
+						input(placeholder="Email" type="text")
+						input(placeholder="Ciudad" type="text")
+					
+					div.col-lg-6.col-md-6.col-sm-12.col-xs-12.padding.padding-l
+						input(placeholder="Apellidos" type="text")
+						input(placeholder="Teléfono" type="text")
+						input(placeholder="Asunto" type="text")
+
+					textarea#Comentarios(name="", cols="30", rows="10")
+						|Comentarios
+
+					input.btn-enviar(placeholder="Comentarios" type="submit", value="enviar")
+
+
+block Scripts

@@ -4,7 +4,7 @@
  * @link https://github.com/brm-castillol/HTML
  * @link Lady Castillo - esteffany.castillo@brm.com.co
  * @license 
- *Wed Oct 26 2016 17:49:30 GMT-0500 (COT)
+ *Wed Nov 16 2016 11:27:56 GMT-0500 (COT)
  */
 a {
   text-decoration: none;
@@ -70,6 +70,9 @@ p.texto-corrido {
   text-align: center;
   margin-top: 0;
 }
+.margen-top {
+  margin-top: 20px;
+}
 .padding {
   padding: 0;
 }
@@ -89,8 +92,8 @@ p.texto-corrido {
   display: inline-block;
   background-repeat: no-repeat;
   position: absolute;
-  top: 26%;
-  left: 27%;
+  top: 23%;
+  left: 21%;
 }
 .texto-acerca {
   font-size: 1.6rem;
@@ -437,7 +440,7 @@ footer {
     top: 70.6%;
   }
   ul.menu-interna-opci li {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 1280px) {
@@ -450,6 +453,14 @@ footer {
   .cont-iconos-menu {
     width: 33%;
     margin-left: 31%;
+  }
+  .menu-interna-opci a {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 843px) {
+  .menu-interna-opci a {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 991px) {
@@ -472,6 +483,21 @@ footer {
   .text-datosU {
     margin-top: 4%;
   }
+  .padding-r,
+  .padding-l {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 795px) {
+  ul.menu-interna-opci li {
+    font-size: 1rem !important;
+    width: 100% !important;
+    background-color: #aeeae3;
+  }
+  ul.menu-internaB-opci li {
+    font-size: 1.2rem !important;
+    width: 100% !important;
+  }
 }
 @media (max-width: 768px) {
   .texto-mapa {
@@ -483,7 +509,7 @@ footer {
     top: -264%;
   }
   .texto-mapa {
-    top: 65.5%;
+    top: 64.5%;
   }
   ul.menu-interna-opci li {
     font-size: 1rem !important;
@@ -501,6 +527,11 @@ footer {
   }
   .cont-inform-vi {
     height: 54vh;
+  }
+}
+@media (max-width: 600px) {
+  .texto-mapa {
+    top: 62.1%;
   }
 }
 @media (max-width: 414px) {
@@ -624,6 +655,31 @@ ul.menu-internaB-opci li a:focus {
   background: linear-gradient(to right, #59d1d9 0%, rgba(89,209,217,0) 100%);
   width: 100%;
   margin: 30px 0;
+}
+input,
+textarea {
+  border: 1px solid #2b8597;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 3px;
+  color: #2b8597;
+}
+.padding-r {
+  padding-right: 10px;
+}
+.padding-l {
+  padding-left: 10px;
+}
+input.btn-enviar {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #2b8597;
+}
+input.btn-enviar:hover {
+  background-color: #aeeae3;
+  border: none;
+  color: #2b8597;
 }
 
 /*# sourceMappingURL=style.css.map */
