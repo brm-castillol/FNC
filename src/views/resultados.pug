@@ -1,0 +1,48 @@
+extends ../templates/base
+
+block title
+	-var titulo = "Resultados";
+	title 
+
+block content
+	div.cont-florFonL.col-lg-3.col-md-4.col-sm-4.col-xs-4
+		img.img-responsive(src="images/Img-Flor-Back.png", alt="")
+	div.cont-florFonR.col-lg-3.col-md-4.col-sm-4.col-xs-4
+		img.img-responsive(src="images/Img-Flor-BackB.png", alt="")
+	section.container-fluid.cont-banner-interna
+		div.row
+			div.banner-interna
+				p.titulo-banner-interna
+					| Resultados
+
+	section.container-fluid
+
+		div.row
+			div.col-lg-10.col-md-10.col-sm-12.col-xs-12.col-lg-offset-1.col-md-offset-1.col-sm-offset-0.col-xs-offset-0.contenedor-general-notas.sombra
+				div
+					div.cont-texto-interna
+						h5
+							| Escriba las palabras clave. 
+
+						form
+							input(placeholder="Buscar" type="text")
+							input.btn-enviar(placeholder="Comentarios" type="submit", value="buscar")
+
+
+					div.cont-texto-interna
+						h5
+							| Su b&uacute;squeda no produjo resultados
+
+						ul
+							li
+								| Verifique que las palabras estén bien escritas.
+
+							li
+								| No encierre la frase entre comillas si desea buscar por cada palabra individualmente. fabulosa búsqueda generalmente devolverá más resultados que "fabulosa búsqueda".
+
+							li
+								|Considere relajar su búsqueda con OR. fabulosa OR búsqueda generalmente devolverá más resultados que fabulosa búsqueda.
+
+
+
+block Scripts

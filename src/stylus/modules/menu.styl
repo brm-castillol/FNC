@@ -1,6 +1,9 @@
 header
 	background-color rgba(242, 242, 242, 0.7)
 	height 89px
+	width 100%
+	z-index 2000
+	position fixed
 	
 #navegacion
 	margin 1.5% 0 0
@@ -12,6 +15,7 @@ header
 		float left
 		height 60px
 		width 20%
+		text-align center
 			
 .icon
 	display none
@@ -21,30 +25,31 @@ header
 	
 .menu-borde
 	border-right 1px solid $Gris
+	
+	a
+		text-decoration none
 
 .cont-iconos-menu
 	float left
 	margin 0 15px
+	height 55px
+	width 24%
 
 p.text-menu
 	color $GrisOsc	
 	font-size 1.5rem
 	line-height 1.5rem
-	margin-top 16px	
-	
+	margin-top 16px
+
 	&:hover, &:active, &:focus
-				display none
-				color $AzulOsc
+		display none
+		color $AzulOsc
 
 p.text-menu-donaciones
 	color $VerdeOsc
 	font-weight bold
 	font-size 1.2rem
 	margin-top 16px	
-	
-	&:hover, &:active, &:focus
-				display none
-				color $AzulOsc
 	
 .btn-buscador
 	height 30px

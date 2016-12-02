@@ -1,4 +1,4 @@
-@media screen and (max-width:800px)
+@media screen and (max-width:985px)
   li.menu-borde
         borber none !important
 
@@ -8,7 +8,8 @@
       background-color $VerdeCla
       
       &:hover, &:active, &:focus
-        background-color $Blanco   
+        background-color $Blanco 
+        color $AzulCla  
   ul
     
     &.menu-fundacion
@@ -20,10 +21,16 @@
   .icon
      float right
      display inline-block !important
+     text-decoration none !important
      
      &:hover, &:active, &:focus
        text-decoration none !important
-     
+  
+  .busca
+    display none
+  
+  .padding-R
+    padding 0  
 
 @media screen and (max-width:800px)
   ul
@@ -42,6 +49,9 @@
             position absolute
             left 91%
             top 0%
+            
+            &:hover, &:active, &:focus
+              text-decoration none !important
   
   .cont-iconos-menu
     display none
@@ -62,10 +72,6 @@
     text-align center
     padding 0 5%
     font-size 1.2rem
-    
-  .cont-iconos-menu
-    width 33%
-    margin-left 31%
   
   .menu-interna-opci 
     
@@ -79,6 +85,10 @@
     a
       font-size 1.2rem
       
+@media (max-width:985px)
+  .cont-iconos-menu
+    display none
+
 @media (max-width:991px)
   
   .subtitulo-destacados
@@ -116,10 +126,13 @@
 @media (max-width:768px)
   .texto-mapa
     top 70.1%
+  
+  .icon
+    top -237px
 
 @media (max-width:600px)
   .icon
-    top -264%
+    top -150px
   
   .texto-mapa
     top 64.5%
@@ -130,26 +143,23 @@
     background-color $VerdeCla
   
   .icono-hojas
-    left 26%
-    top 34%
+    left 17%
+    top 8%
 
 @media (max-width:480px)
-  .icon
-    top -202%
-  
-  .cont-inform-vi
-    height 54vh
+   .icon
+    top -90px
+
   
 @media (max-width:600px)
   
   .texto-mapa
     top 62.1%
     
-@media (max-width:414px)
-  .icon
-    top -166%
+//@media (max-width:414px)
+  
 
 @media (max-width:320px)
   .icon
-    top -115%
+    top -90px
     left 86%

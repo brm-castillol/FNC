@@ -4,7 +4,7 @@
  * @link https://github.com/brm-castillol/HTML
  * @link Lady Castillo - esteffany.castillo@brm.com.co
  * @license 
- *Wed Nov 16 2016 11:27:56 GMT-0500 (COT)
+ *Thu Dec 01 2016 21:13:32 GMT-0500 (COT)
  */
 a {
   text-decoration: none;
@@ -14,6 +14,9 @@ a:hover {
 }
 a img {
   border: 0;
+}
+.img-responsive {
+  width: 100% !important;
 }
 body {
   font-size: 1.3em;
@@ -28,7 +31,7 @@ h3.titulos-acerca {
   font-size: 1.5em;
   color: #fff;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 13%;
 }
 h2 {
   font-size: 4rem;
@@ -92,7 +95,7 @@ p.texto-corrido {
   display: inline-block;
   background-repeat: no-repeat;
   position: absolute;
-  top: 23%;
+  top: 44px;
   left: 21%;
 }
 .texto-acerca {
@@ -152,7 +155,7 @@ i.cont-icono {
   width: 37%;
   float: left;
   display: inline-block;
-  margin-top: 44%;
+  margin-top: calc(50% - 37%);
 }
 .texto-corr-azul {
   color: #166170;
@@ -162,11 +165,14 @@ i.cont-icono {
 }
 .cont-inform-vi {
   background-color: #aeeae3;
-  height: 75vh;
+  height: 90vh;
+}
+.cont-inform-viTex {
+  height: 90vh;
 }
 .descrp-inform {
   float: left;
-  margin: 44% 0 44.6% 4%;
+  margin: 25% 0 44.6% 4%;
   width: 58%;
 }
 .conte-play-video {
@@ -186,7 +192,7 @@ i.cont-icono {
   color: #fff;
 }
 .cont-video {
-  height: 75vh;
+  height: 90vh;
   background: #000;
 }
 .texto-mapa {
@@ -196,37 +202,48 @@ i.cont-icono {
   font-family: $$RobotoB;
   color: #166170;
   text-transform: uppercase;
-  top: 60.3%;
   width: 100%;
   position: absolute;
   text-align: center;
-  margin-bottom: 0;
 }
 .cont-datos-ubicacion {
   background-color: #166170;
-  height: 162px;
-  margin-top: -5px;
 }
 i.cont-iconoB {
   width: 17%;
   float: left;
   display: inline-block;
-  margin: 8% 6% 6%;
+  margin: 9.6% 6% 6%;
 }
 .text-datosU {
   border-left: 1px solid #fff;
   float: left;
   height: 100px;
   font-family: 'RobotoL', sans-serif;
-  font-size: 1.4rem;
-  margin-top: 7%;
-  padding-left: 19px;
+  font-size: 2rem;
+  margin-top: 10%;
+  padding-left: 4%;
   width: 65%;
   color: #fff;
   font-size: 1.2rem;
 }
 .mapa-responsive {
   padding-bottom: 75% !important;
+}
+.cont-florFonL {
+  height: 1282px;
+  position: absolute;
+  z-index: -8;
+  padding: 0;
+  top: 100%;
+}
+.cont-florFonR {
+  height: 1282px;
+  position: absolute;
+  z-index: -8;
+  right: 0;
+  top: 200%;
+  padding: 0;
 }
 @font-face {
   font-family: 'RobotoR';
@@ -259,6 +276,9 @@ i.cont-iconoB {
 header {
   background-color: rgba(242,242,242,0.7);
   height: 89px;
+  width: 100%;
+  z-index: 2000;
+  position: fixed;
 }
 #navegacion {
   margin: 1.5% 0 0;
@@ -270,6 +290,7 @@ header {
   float: left;
   height: 60px;
   width: 20%;
+  text-align: center;
 }
 .icon {
   display: none;
@@ -281,9 +302,14 @@ header {
 .menu-borde {
   border-right: 1px solid #d7d7d7;
 }
+.menu-borde a {
+  text-decoration: none;
+}
 .cont-iconos-menu {
   float: left;
   margin: 0 15px;
+  height: 55px;
+  width: 24%;
 }
 p.text-menu {
   color: #686767;
@@ -302,12 +328,6 @@ p.text-menu-donaciones {
   font-weight: bold;
   font-size: 1.2rem;
   margin-top: 16px;
-}
-p.text-menu-donaciones:hover,
-p.text-menu-donaciones:active,
-p.text-menu-donaciones:focus {
-  display: none;
-  color: #166170;
 }
 .btn-buscador {
   height: 30px;
@@ -386,7 +406,7 @@ footer {
   font-style: normal;
   text-align: right;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 985px) {
   li.menu-borde {
     borber: none !important;
   }
@@ -398,6 +418,7 @@ footer {
   #navegacion li:active,
   #navegacion li:focus {
     background-color: #fff;
+    color: $AzulCla;
   }
   ul.menu-fundacion li:not(:first-child) {
     display: none;
@@ -405,11 +426,18 @@ footer {
   .icon {
     float: right;
     display: inline-block !important;
+    text-decoration: none !important;
   }
   .icon:hover,
   .icon:active,
   .icon:focus {
     text-decoration: none !important;
+  }
+  .busca {
+    display: none;
+  }
+  .padding-R {
+    padding: 0;
   }
 }
 @media screen and (max-width: 800px) {
@@ -428,6 +456,11 @@ footer {
     position: absolute;
     left: 91%;
     top: 0%;
+  }
+  .icon:hover,
+  .icon:active,
+  .icon:focus {
+    text-decoration: none !important;
   }
   .cont-iconos-menu {
     display: none;
@@ -450,10 +483,6 @@ footer {
     padding: 0 5%;
     font-size: 1.2rem;
   }
-  .cont-iconos-menu {
-    width: 33%;
-    margin-left: 31%;
-  }
   .menu-interna-opci a {
     font-size: 1.3rem;
   }
@@ -461,6 +490,11 @@ footer {
 @media (max-width: 843px) {
   .menu-interna-opci a {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 985px) {
+  .cont-iconos-menu {
+    display: none;
   }
 }
 @media (max-width: 991px) {
@@ -503,10 +537,13 @@ footer {
   .texto-mapa {
     top: 70.1%;
   }
+  .icon {
+    top: -237px;
+  }
 }
 @media (max-width: 600px) {
   .icon {
-    top: -264%;
+    top: -150px;
   }
   .texto-mapa {
     top: 64.5%;
@@ -517,16 +554,13 @@ footer {
     background-color: #aeeae3;
   }
   .icono-hojas {
-    left: 26%;
-    top: 34%;
+    left: 17%;
+    top: 8%;
   }
 }
 @media (max-width: 480px) {
   .icon {
-    top: -202%;
-  }
-  .cont-inform-vi {
-    height: 54vh;
+    top: -90px;
   }
 }
 @media (max-width: 600px) {
@@ -534,14 +568,9 @@ footer {
     top: 62.1%;
   }
 }
-@media (max-width: 414px) {
-  .icon {
-    top: -166%;
-  }
-}
 @media (max-width: 320px) {
   .icon {
-    top: -115%;
+    top: -90px;
     left: 86%;
   }
 }
@@ -655,6 +684,9 @@ ul.menu-internaB-opci li a:focus {
   background: linear-gradient(to right, #59d1d9 0%, rgba(89,209,217,0) 100%);
   width: 100%;
   margin: 30px 0;
+}
+.cont-banner-interna {
+  padding-top: 8.2%;
 }
 input,
 textarea {
