@@ -4,7 +4,7 @@
  * @link https://github.com/brm-castillol/HTML
  * @link Lady Castillo - esteffany.castillo@brm.com.co
  * @license 
- *Fri Dec 02 2016 15:45:38 GMT-0500 (COT)
+ *Fri Dec 02 2016 16:34:59 GMT-0500 (COT)
  */
 a {
   text-decoration: none;
@@ -346,7 +346,6 @@ p.text-menu {
 p.text-menu:hover,
 p.text-menu:active,
 p.text-menu:focus {
-  display: none;
   color: #166170;
 }
 p.text-menu-donaciones {
