@@ -4,7 +4,7 @@
  * @link https://github.com/brm-castillol/HTML
  * @link Lady Castillo - esteffany.castillo@brm.com.co
  * @license 
- *Fri Dec 02 2016 01:25:04 GMT-0500 (COT)
+ *Fri Dec 02 2016 14:57:13 GMT-0500 (COT)
  */
 a {
   text-decoration: none;
@@ -649,7 +649,7 @@ ul.menu-interna-opci li {
   list-style: none;
   float: left;
   padding: 12px 0;
-  width: calc(100% / 12);
+  width: calc(100% / 12) !important;
   border-right: 1px solid #2b8597;
   padding: 14px;
   text-align: center;
