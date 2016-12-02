@@ -4,7 +4,7 @@
  * @link https://github.com/brm-castillol/HTML
  * @link Lady Castillo - esteffany.castillo@brm.com.co
  * @license 
- *Fri Dec 02 2016 14:57:13 GMT-0500 (COT)
+ *Fri Dec 02 2016 15:45:38 GMT-0500 (COT)
  */
 a {
   text-decoration: none;
@@ -231,18 +231,18 @@ i.cont-iconoB {
   padding-bottom: 75% !important;
 }
 .cont-florFonL {
-  height: 1282px;
+  height: auto;
   position: absolute;
   z-index: -8;
   padding: 0;
-  top: 100%;
+  top: 25%;
 }
 .cont-florFonR {
-  height: 1282px;
+  height: auto;
   position: absolute;
   z-index: -8;
   right: 0;
-  top: 200%;
+  top: 50%;
   padding: 0;
 }
 .oculto {
