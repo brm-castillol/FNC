@@ -4,7 +4,7 @@
  * @link https://github.com/brm-castillol/HTML
  * @link Lady Castillo - esteffany.castillo@brm.com.co
  * @license 
- *Thu Dec 01 2016 21:13:32 GMT-0500 (COT)
+ *Fri Dec 02 2016 01:25:04 GMT-0500 (COT)
  */
 a {
   text-decoration: none;
@@ -244,6 +244,32 @@ i.cont-iconoB {
   right: 0;
   top: 200%;
   padding: 0;
+}
+.oculto {
+  display: none;
+}
+.scrollinview {
+  position: relative;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  padding-top: 30px;
+  border: 0;
+  top: 20px;
+  z-index: 99;
+}
+.scrollinview.showview {
+  visibility: visible !important;
+  opacity: 1 !important;
+  -ms-filter: none !important;
+  filter: none !important;
+  padding-top: 0px !important;
+  top: 0px !important;
 }
 @font-face {
   font-family: 'RobotoR';
@@ -522,6 +548,11 @@ footer {
     padding: 0 !important;
   }
 }
+@media (max-width: 900px) {
+  ul.menu-interna-opci li {
+    width: 9% !important;
+  }
+}
 @media (max-width: 795px) {
   ul.menu-interna-opci li {
     font-size: 1rem !important;
@@ -531,6 +562,9 @@ footer {
   ul.menu-internaB-opci li {
     font-size: 1.2rem !important;
     width: 100% !important;
+  }
+  ul.menu-interna-opci li {
+    width: 16.6% !important;
   }
 }
 @media (max-width: 768px) {
@@ -548,20 +582,21 @@ footer {
   .texto-mapa {
     top: 64.5%;
   }
-  ul.menu-interna-opci li {
-    font-size: 1rem !important;
-    width: 100% !important;
-    background-color: #aeeae3;
-  }
-  .icono-hojas {
-    left: 17%;
-    top: 8%;
-  }
+}
+ul.menu-interna-opci li {
+  width: 16.6% !important;
+}
+.icono-hojas {
+  left: 17%;
+  top: 8%;
 }
 @media (max-width: 480px) {
   .icon {
     top: -90px;
   }
+}
+ul.menu-interna-opci li {
+  width: 16.6% !important;
 }
 @media (max-width: 600px) {
   .texto-mapa {
@@ -573,6 +608,12 @@ footer {
     top: -90px;
     left: 86%;
   }
+  ul.menu-interna-opci li {
+    width: 20% !important;
+  }
+}
+.img-responsive {
+  width: 100% !important;
 }
 .banner-interna {
   width: 100%;
@@ -595,33 +636,39 @@ footer {
 .con-tmenu-Inter {
   padding: 0;
 }
+.activo {
+  background-color: #686767 !important;
+  text-decoration: none;
+}
 ul.menu-interna-opci {
   margin: 0;
   padding: 0;
-  background-color: #aeeae3;
   height: 50px;
 }
 ul.menu-interna-opci li {
   list-style: none;
   float: left;
   padding: 12px 0;
-  width: calc(100% / 8);
+  width: calc(100% / 12);
   border-right: 1px solid #2b8597;
   padding: 14px;
   text-align: center;
   font-size: 1.5rem;
+  background-color: #aeeae3;
 }
 ul.menu-interna-opci li:last-child {
   border: none;
 }
-ul.menu-interna-opci li a {
-  color: #166170;
-  font-family: 'RobotoB', sans-serif;
+ul.menu-interna-opci li:hover,
+ul.menu-interna-opci li:active,
+ul.menu-interna-opci li:focus {
+  background-color: #686767;
+  text-decoration: none;
 }
 ul.menu-interna-opci li a:hover,
 ul.menu-interna-opci li a:active,
 ul.menu-interna-opci li a:focus {
-  color: #686767;
+  background-color: #686767;
   text-decoration: none;
 }
 .contenedor-general-notas {

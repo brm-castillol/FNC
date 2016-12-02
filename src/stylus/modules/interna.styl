@@ -1,3 +1,6 @@
+.img-responsive 
+	width 100% !important
+	
 .banner-interna
 	width 100%
 	background-image url("../images/Img-Banner-Intern.jpg")
@@ -17,31 +20,35 @@
 .con-tmenu-Inter
 	padding 0
 	
+.activo
+		background-color $GrisOsc !important
+		text-decoration none	
 ul.menu-interna-opci
 	margin 0
 	padding 0
-	background-color $VerdeCla
 	height 50px
 	
 	li
 		list-style none
 		float left
 		padding 12px 0
-		width calc(100% / 8)
+		width calc(100% / 12)
 		border-right 1px solid $VerdeOsc
 		padding 14px
 		text-align center
 		font-size 1.5rem
+		background-color $VerdeCla
 		
 		&:last-child
+			
 			border none
-		
+		&:hover, &:active, &:focus
+				background-color $GrisOsc
+				text-decoration none
 		a
-			color $AzulOsc
-			font-family $RobotoB
 			
 			&:hover, &:active, &:focus
-				color $GrisOsc
+				background-color $GrisOsc
 				text-decoration none
 
 .contenedor-general-notas
